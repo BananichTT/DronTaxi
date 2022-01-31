@@ -1,0 +1,35 @@
+#stack-pane{
+    -fx-background-image: url("images/DronePilot.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-min-height: 480;
+    -fx-min-width: 1080;
+    
+    -fx-background-size: cover;
+}
+
+#stack-pane-gradient{
+    -fx-background-color: linear-gradient(to right,  #3f1c83, transparent);
+    -fx-min-height: 480;
+    -fx-min-width: 1080;
+    
+    -fx-background-size: cover;
+}
+
+#login-button{
+    -fx-background-color: white, #00c3ff;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 30 5 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+#register-button{
+    -fx-background-color: white, #36ff78;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 30 5 30;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
