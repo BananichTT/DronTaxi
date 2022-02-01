@@ -1,0 +1,8 @@
+#stack-pane{
+    -fx-background-color:#b238e0;
+    
+    -fx-min-height: 480;
+    -fx-min-width: 1080;
+    
+    -fx-background-size: cover;
+}
