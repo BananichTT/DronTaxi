@@ -1,8 +1,21 @@
 #stack-pane{
-    -fx-background-color:#b238e0;
+    -fx-background-color: #632ccf;
     
     -fx-min-height: 480;
     -fx-min-width: 1080;
     
     -fx-background-size: cover;
+}
+
+#button{
+    -fx-background-color: #632ccf;
+    -fx-cursor: hand;
+}
+
+#button:hover{
+    -fx-background-color: #3f1c83;
+}
+
+#vbox{
+    -fx-min-width: 250;
 }
