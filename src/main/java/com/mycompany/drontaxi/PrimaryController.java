@@ -36,7 +36,7 @@ public class PrimaryController {
 
             if (user.getPassword().equals(userpassword)) {
                 Userrole role = user.getRoleId();
-                if (role.getRoleName().equals("admin")) {
+                if (role.getRoleName().equals("admin") || role.getRoleName().equals("user")) {
                     App.setRoot("secondary");
                 }
             } else {
@@ -45,5 +45,10 @@ public class PrimaryController {
         } catch (NoResultException e) {
             System.out.println("Неверный логин или пароль!");
         }
+    }
+    
+    @FXML
+    private void switchToRegister() throws IOException {
+        App.setRoot("register");
     }
 }

@@ -3,4 +3,5 @@ com\mycompany\drontaxi\db\User.class
 com\mycompany\drontaxi\db\Userrole.class
 com\mycompany\drontaxi\SecondaryController.class
 module-info.class
+com\mycompany\drontaxi\RegisterController.class
 com\mycompany\drontaxi\PrimaryController.class
