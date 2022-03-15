@@ -8,7 +8,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
@@ -39,7 +38,9 @@ public class RegisterController{
         
         if (userlogin.isEmpty() || userpassword.isEmpty()) {
             System.out.println("Пустые поля");
-        } else {
+        }else if (userpassword.length() < 6){
+            System.out.println("Пароль должен быт больше 6 символов");
+        }else {
             em.getTransaction().begin();
 
             User user = new User();
@@ -55,6 +56,5 @@ public class RegisterController{
 
             App.setRoot("primary");
         }
-    }
-    
+    }  
 }
