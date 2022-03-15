@@ -4,6 +4,8 @@ import com.mycompany.drontaxi.db.User;
 import com.mycompany.drontaxi.db.Userrole;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javax.persistence.EntityManager;
@@ -15,7 +17,7 @@ import javax.persistence.Query;
 public class PrimaryController {
 
     @FXML
-    private TextField userLogin;
+    public TextField userLogin;
     @FXML
     private PasswordField userPassword;
 
@@ -28,7 +30,12 @@ public class PrimaryController {
         Query q = em.createNamedQuery("User.findByLogin");
         String userlogin = userLogin.getText();
         String userpassword = userPassword.getText();
-
+        
+//         FXMLLoader loader = new FXMLLoader();
+//         loader.setLocation(getClass().getResource("secondary.fxml"));
+//         Parent root = loader.load();
+//         SecondaryController sc = loader.getController();
+//         sc.initialize(userlogin);
         q.setParameter("login", userlogin);
 
         try {

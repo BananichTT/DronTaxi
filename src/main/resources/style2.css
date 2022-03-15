@@ -19,3 +19,7 @@
 #vbox{
     -fx-min-width: 250;
 }
+
+#vbox text{
+    -fx-padding: 100px;
+}

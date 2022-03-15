@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -116,15 +117,12 @@
                         <Insets right="20.0" />
                      </HBox.margin>
                   </Text>
-                  <Text fx:id="logintext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
+                  <TextField />
                </children>
             </HBox>
          </children>
       </VBox>
-      <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="875.0" layoutY="188.0" mnemonicParsing="false" onAction="#profileEdit" text="Редактировать профиль" />
+      <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="974.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchProfile" text="Сохранить" />
+      <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="898.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchProfile" text="Отмена" />
    </children>
 </AnchorPane>

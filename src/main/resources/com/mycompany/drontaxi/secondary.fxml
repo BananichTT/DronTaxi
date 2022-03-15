@@ -5,6 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -12,7 +13,6 @@
 
 <AnchorPane id="stack-pane" stylesheets="@../../../style2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.drontaxi.SecondaryController">
    <children>
-        <Button fx:id="secondaryButton" layoutX="472.0" layoutY="401.0" onAction="#switchToPrimary" text="Switch to Primary View" />
       <VBox id="vbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="230.0" stylesheets="@../../../style2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="250.0">
@@ -29,7 +29,7 @@
                   </Text>
                </children>
             </Pane>
-            <Button id="button" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@../../../style2.css" text="Профиль" textFill="WHITE">
+            <Button id="button" alignment="BASELINE_LEFT" defaultButton="true" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#switchProfile" prefHeight="50.0" prefWidth="200.0" stylesheets="@../../../style2.css" text="Профиль" textFill="WHITE">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -47,7 +47,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button id="button" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" stylesheets="@../../../style2.css" text="Упр. пользователями" textFill="WHITE">
+            <Button id="button" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#userContr" prefHeight="50.0" prefWidth="200.0" stylesheets="@../../../style2.css" text="Упр. пользователями" textFill="WHITE">
                <padding>
                   <Insets left="50.0" />
                </padding>
@@ -83,7 +83,48 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button id="button" alignment="BASELINE_LEFT" graphicTextGap="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="50.0" prefWidth="200.0" stylesheets="@../../../style2.css" text="Выход" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </VBox>
+      <VBox id="vbox" layoutX="365.0" layoutY="35.0" prefHeight="145.0" prefWidth="562.0" stylesheets="@../../../style2.css">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ПРОФИЛЬ" textAlignment="CENTER" textOrigin="CENTER">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" left="200.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="logintext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="logintext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="875.0" layoutY="188.0" mnemonicParsing="false" onAction="#profileEdit" text="Редактировать профиль" />
    </children>
 </AnchorPane>

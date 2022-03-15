@@ -5,7 +5,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -98,33 +97,15 @@
       </VBox>
       <VBox id="vbox" layoutX="365.0" layoutY="35.0" prefHeight="145.0" prefWidth="562.0" stylesheets="@../../../style2.css">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ПРОФИЛЬ" textAlignment="CENTER" textOrigin="CENTER">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Управление пользователями" textAlignment="CENTER" textOrigin="CENTER">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="40.0" left="200.0" />
+                  <Insets bottom="40.0" left="100.0" />
                </VBox.margin>
             </Text>
-            <HBox prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Text fx:id="logintext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="20.0" />
-                     </HBox.margin>
-                  </Text>
-                  <Text fx:id="logintext" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-               </children>
-            </HBox>
          </children>
       </VBox>
-      <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="875.0" layoutY="188.0" mnemonicParsing="false" onAction="#profileEdit" text="Редактировать профиль" />
    </children>
 </AnchorPane>
